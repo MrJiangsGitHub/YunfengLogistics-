@@ -1,0 +1,67 @@
+  
+
+  <view class="orbox">
+  
+    <view class="order-edit">
+        <view class="box-order">
+            <view class="order-img">
+                <image src="../../assets/images/order-address.png"></image>
+
+            </view>
+
+            <view class="address-text">
+                河马仓库
+                <view>
+                    <view class='copy-box'>
+                        <view>13245678977 </view>
+                        <view style="color: #40B850 ">复制</view>
+                    </view>
+
+                </view>
+
+            </view>
+
+            <view class="copy-text">
+                深圳市龙华区龙华街道工业路壹城环智中心C座2607室
+            </view>
+        </view>
+        <view class="box-order">
+            <view class="order-img">
+                <image src="../../assets/images/酒店.png"></image>
+
+            </view>
+
+            <view class="address-text">
+                河马仓库
+                <view>
+                    <view class='copy-box'>
+                        <view>13245678977 </view>
+                        <view style="color: #40B850 ">复制</view>
+                    </view>
+
+                </view>
+
+            </view>
+
+            <view class="copy-text">
+                深圳市龙华区龙华街道工业路壹城环智中心C座2607室
+            </view>
+        </view>
+    </view>
+    <view class="order-edit">
+  
+</view>
+<view class="order-edit">
+
+</view >
+<view style='display:flex; '>
+    <button>联系客服</button>
+<button>联系客服</button>
+</view>
+
+  </view>
+
+ 
+
+
+    

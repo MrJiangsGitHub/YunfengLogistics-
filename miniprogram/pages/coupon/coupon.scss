@@ -1,0 +1,19 @@
+/* pages/coupon/coupon.wxss */
+.moren {
+  /* width: 375px; */
+  width: 475px;
+  height: 150px;
+  background-color: #e7691d;
+}
+
+.img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.img image {
+  margin: auto;
+  /* width: 333px; */
+  height: 120px;
+}

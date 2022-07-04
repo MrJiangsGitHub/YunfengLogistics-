@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-dialog": "@vant/weapp/dialog/index"
+  },
+  "navigationBarTitleText": "云峰物流",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor":"#4e148c"
+}

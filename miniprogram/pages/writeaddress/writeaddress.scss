@@ -1,0 +1,112 @@
+/* pages/writeaddress/writeaddress.wxss */
+.address-box {
+    left: 13px;
+    top: 114px;
+    width: 347px;
+    height: 135px;
+    line-height: 20px;
+    opacity: 0.85;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 79);
+    font-size: 14px;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
+    font-family: Arial;
+    border: 1px solid rgba(255, 255, 255, 100);
+    margin: 40rpx auto;
+
+    .address-img {
+        margin: 20rpx 20rpx;
+
+        text {
+            margin-left: 10rpx;
+        }
+
+        image {
+            vertical-align: middle;
+
+        }
+    }
+
+    .address-text {
+        display: flex;
+        margin-left: 50rpx;
+        font-size: 15px;
+
+        .copy-box {
+            margin-left: 50rpx;
+            display: flex;
+        }
+    }
+
+    .copy-text {
+        margin-left: 50rpx;
+        margin-top: 20rpx;
+        font-size: 10px;
+        width: 238px;
+        color: #999999;
+    }
+}
+
+.vity-box {
+    .vity {
+        margin: auto;
+        left: 14px;
+        top: 272px;
+        width: 347px;
+        height: 370px;
+        line-height: 20px;
+        opacity: 0.85;
+        border-radius: 3px;
+        background-color: rgba(255, 255, 255, 79);
+        color: rgba(16, 16, 16, 100);
+        font-size: 14px;
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
+        font-family: Arial;
+        border: 1px solid rgba(255, 255, 255, 100);
+
+        .ckcss {
+            margin-top: 40rpx;
+        }
+
+        .vity-text {
+            margin-left: 13%;
+        }
+
+        .btncss-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 10rpx;
+
+            .btncss {
+                left: 275px;
+                top: 321px;
+                width: 65px;
+                height: 23px;
+                border-radius: 4px;
+                background-color: rgba(217, 241, 221, 100);
+                color: rgba(64, 184, 80, 100);
+                font-size: 12px;
+                text-align: center;
+                font-family: Microsoft Yahei;
+                border: 1px solid rgba(64, 184, 80, 100);
+            }
+        }
+
+    }
+}
+.booton{
+    left: 107px;
+top: 693px;
+width: 162px;
+height: 38px;
+line-height: 38px;
+border-radius: 4px;
+background-color: rgba(76, 22, 142, 100);
+color: rgba(255, 255, 255, 100);
+font-size: 14px;
+font-family: Microsoft Yahei;
+margin: auto;
+text-align: center;
+margin-top: 30px;
+}

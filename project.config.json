@@ -8,6 +8,13 @@
   "compileType": "miniprogram",
   "projectname": "ts-sass-demo",
   "setting": {
+    "packNpmManually": true,
+    "packNpmRelationList": [
+      {
+        "packageJsonPath": "./package.json",
+        "miniprogramNpmDistDir": "./miniprogram/"
+      }
+    ],
     "useCompilerPlugins": [
       "typescript",
       "sass"
@@ -24,8 +31,6 @@
     "uploadWithSourceMap": true,
     "enhance": true,
     "showShadowRootInWxmlPanel": true,
-    "packNpmManually": false,
-    "packNpmRelationList": [],
     "minifyWXSS": true,
     "useStaticServer": true,
     "showES6CompileOption": false,

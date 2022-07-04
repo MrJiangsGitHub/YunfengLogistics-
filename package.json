@@ -1,15 +1,27 @@
 {
-  "name": "miniprogram-ts-less-quickstart",
+  "name": "YunfengLogistics",
   "version": "1.0.0",
-  "description": "",
+  "description": "跨境物流",
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "@vant/weapp": "^1.10.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.1",
+    "miniprogram-api-typings": "^3.5.0"
+  },
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrJiangsGitHub/YunfengLogistics-.git"
   },
   "keywords": [],
   "author": "",
-  "license": "",
-  "dependencies": {
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrJiangsGitHub/YunfengLogistics-/issues"
   },
-  "devDependencies": {
-    "miniprogram-api-typings": "^2.8.3-1"
-  }
+  "homepage": "https://github.com/MrJiangsGitHub/YunfengLogistics-#readme"
 }

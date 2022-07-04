@@ -1,0 +1,75 @@
+<view >
+
+<view class="address-box">
+  <view class="address-img">
+  <image src="../../assets/images/定位.png" style="width: 20px; height: 20px;"></image>
+  <text>仓库地址</text>
+  </view>
+  <view class="address-text">
+  河马仓库
+   <view>
+   <view class='copy-box'>
+    <view>13245678977 </view>
+   <view style="color: #40B850 ">复制</view>
+   </view>
+   
+   </view>
+  </view>
+  <view class="copy-text">
+    深圳市龙华区龙华街道工业路壹城环智中心C座2607室
+   </view>
+</view>
+<view class="vity-box">
+<view class="vity">
+<view class="ckcss">
+    <view class="vity-text">
+目标国收件信息
+</view>
+<view class="btncss-box">
+   <view style="color: #f60000; font-size: 12px;"><image src="../../assets/images/307感叹号-线性圆框.png"
+    style="width: 15px; height: 15px;  vertical-align: middle ; "></image>请用英文填写</view>
+   <view class="btncss">选择地址</view>
+</view>
+</view>
+<van-cell-group>
+  <van-field
+    value="{{ username }}"
+    clearable
+    label="Name："
+    placeholder="Please fill in the recipient‘s name"
+    bind:click-icon="onClickIcon"
+  />
+
+  <van-field
+    value="{{ password }}"
+    type="password"
+    label="Phone："
+    placeholder="Please fill in the recipient‘s phone"
+    border="{{ false }}"
+  />
+  <van-field
+    value="{{ password }}"
+    type="password"
+    label="Address："
+    placeholder="Please fill in the address"
+    border="{{ false }}"
+  />  <van-field
+    value="{{ password }}"
+    type="password"
+    label="City："
+    placeholder="Please fill in the city"
+    border="{{ false }}"
+  />  <van-field
+    value="{{ password }}"
+    type="password"
+    label="PostCode："
+    placeholder="Please fill in the postcode"
+    border="{{ false }}"
+  />
+</van-cell-group>
+</view>
+</view>
+</view>
+<view class="booton" catchtap="btntap">
+立即转运
+</view>
