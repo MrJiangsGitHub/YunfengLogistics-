@@ -1,0 +1,22 @@
+<view>
+
+    <view class="couponedit">
+        <view class="couponedit-one">
+            <view>￥10</view>
+            <view>满￥599使用</view>
+        </view>
+        <view class="couponedit-box">
+            <view class="text-to">
+<text>满减券</text>
+<text>双十一无门槛10元券</text>
+</view>
+<view class="text">
+    <text>2018.04.11到期</text>
+<text>(仅剩1天)</text>
+<button size="mini">立即领取</button>
+</view>
+        </view>
+
+    </view>
+
+</view>

@@ -1,0 +1,38 @@
+/* pages/couponedit/couponedit.wxss */
+.couponedit{
+    left: 10px;
+top: 107px;
+width: 355px;
+height: 121px;
+border-radius: 6px;
+background-color: rgba(255, 255, 255, 100);
+border: 2px solid #b90808;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin: auto;
+}
+.couponedit-one{
+    // border: 1px solid #b90808;
+    margin: auto;
+}
+.couponedit-box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+
+    flex: 2 1;
+}
+.text{
+    display: flex;
+    button{
+        width: 70px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 10px;
+    }
+}
+.text-to{
+    height: 19px;
+}

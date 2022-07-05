@@ -1,6 +1,6 @@
 // pages/home/home.ts
-const  Dialog:any = require('../../miniprogram_npm/@vant/weapp/dialog/dialog') ;
-
+// const  Dialog:any = require('../../miniprogram_npm/@vant/weapp/dialog/dialog') ;
+const {Person} =require('../../type/index')
 Page({
 
   /**
@@ -10,11 +10,38 @@ Page({
     getlunbo:[{img:"../../assets/images/7.jpeg"},{img:"../../assets/images/轮播图@1x.png"}],
     show: true,
     shows:false,
+    text:false,
+    btndata:[
+        "普通货物",
+        "电子产品",
+        "液体粉末",
+        "内地EMS",
+        "广东EMS"
+]
   },
 
   
- 
+  genghuan: function(e: { currentTarget: { dataset: { index: any; }; }; }){
+      console.log(e);
+      
+    this.setData({ colorIndex:e.currentTarget.dataset.index});
+     },
+  onChange(){
+//  this.data.btndata.map(item=>{
+//      if(this.data.text){
+//          item.ishow = true
+//      }else{
+//         item.ishow = true
+//      }
 
+       
+//      })
+     
+    this.setData({
+        text:!this.data.text
+    })
+      
+  },
   onClose() {
     this.setData({ show: false });
   },

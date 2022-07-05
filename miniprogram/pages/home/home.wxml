@@ -1,114 +1,111 @@
 <view id="box">
-  <view class="bgc">
-    <!-- 轮播图 -->
-    <swiper autoplay class="swiper">
-      <swiper-item class="img">
-        <image src="../../assets/images/轮播图@1x (1).png"></image>
-      </swiper-item>
-      <swiper-item class="img">
-        <image src="../../assets/images/轮播图@1x (1).png"></image>
-      </swiper-item>
-    </swiper>
-    <view class="dizhi">
-      <view class="china">
-        <text>中国</text>
-        <view class="feiji">
-          <image src="../../assets/images/飞机中.png"></image>
-        </view>
-        <text>美国</text>
-      </view>
-      <view>
-        <button bindtap="isshow">立即转运</button>
-        <view wx:if="{{shows}}">
-          <van-dialog use-slot title="预选渠道" show="{{ show }}" bind:cancel="cancel"bind:confirm='confirm' show-cancel-button bind:close="onClose"  confirmButtonText='{{"下一步"}}' >
-            <view class="box-btn">
-            <view class="box-btn1">
-              <view class="buoo" catchtap="onChange" data-est="111">普通货物</view>
-              <view  class="buoo"  catchtap="onChange">电子产品</view>
+    <view class="bgc">
+        <!-- 轮播图 -->
+        <swiper autoplay class="swiper">
+            <swiper-item class="img">
+                <image src="../../assets/images/轮播图@1x (1).png"></image>
+            </swiper-item>
+            <swiper-item class="img">
+                <image src="../../assets/images/轮播图@1x (1).png"></image>
+            </swiper-item>
+        </swiper>
+        <view class="dizhi">
+            <view class="china">
+                <text>中国</text>
+                <view class="feiji">
+                    <image src="../../assets/images/飞机中.png"></image>
+                </view>
+                <text>美国</text>
             </view>
-            <view class="box-btn1">
-              <view class="buoo">液体粉末</view>
-              <view  class="buoo">内地EMS</view>
+            <view>
+                <button bindtap="isshow">立即转运</button>
+                <view wx:if="{{shows}}">
+                    <van-dialog use-slot title="预选渠道" show="{{ show }}" bind:cancel="cancel" bind:confirm='confirm' show-cancel-button bind:close="onClose" confirmButtonText='{{"下一步"}}'>
+                        <view class="box-btn">
+                            <view class="box-btn1">
+                                <button class="Cbtn"
+                                 wx:for="{{btndata}}" wx:key='this' 
+                                 data-index='{{index}}'
+                                  style="{{index===colorIndex? 'background:#4e148c; color: #fff;':'background:#FFF; color: #4e148c;'}}" 
+                                 type="default" bindtap="genghuan">{{item}}</button>
+                            </view>
+
+
+                        </view>
+
+                    </van-dialog>
+                </view>
+
+
             </view>
-            <view class="box-btn2" style="margin-left: 5px;">
-              <view class="buoo">广东ESM</view>
+        </view>
+    </view>
+
+    <!-- 客服 -->
+    <view class="kefu">
+        <view class="hema">
+            <image src="../../assets/images/图片 Copy@1x (4).png"></image>
+        </view>
+        <view class="lianxi">
+            <text class="he">联系河马</text>
+            <text>为您解决下单疑问？</text>
+        </view>
+
+        <view style="display: flex; align-items: center; margin-left: 30%;">
+            <image style="width: 25px; height: 25px;" src="../../assets/images/右箭头.png"></image>
+        </view>
+
+    </view>
+
+    <view class="center">
+        <view class="car">
+            <view>
+                <view>
+                    转运须知
+                </view>
+                <view>
+                    流程和注意事项
+                </view>
             </view>
-            
+            <view class="bottom">
+                <view class="jiantou">
+                    <image src="../../assets/images/jiantou.png"></image>
+                </view>
+                <view class="che">
+                    <image src="../../assets/images/car.png"></image>
+                </view>
             </view>
-
-          </van-dialog>
         </view>
 
-
-      </view>
+        <view class="car ccc">
+            <view>
+                <view>
+                    运费估算
+                </view>
+                <view>
+                    费用心中有数
+                </view>
+            </view>
+            <view class="bottom">
+                <view class="jiantou1">
+                    <image src="../../assets/images/jiantou.png"></image>
+                </view>
+                <view class="che2 ">
+                    <image src="../../assets/images/jisuan.png"></image>
+                </view>
+            </view>
+        </view>
     </view>
-  </view>
+    <view class="aaa">
+        <view class="text-content">
+            轻松转运
 
-  <!-- 客服 -->
-  <view class="kefu">
-    <view class="hema">
-      <image src="../../assets/images/图片 Copy@1x (4).png"></image>
+        </view>
+        <image src="../../assets/images/图片 4@1x.png"></image>
     </view>
-    <view class="lianxi">
-      <text class="he">联系河马</text>
-      <text>为您解决下单疑问？</text>
+    <view class="btn">
+        <button>复制仓库地址去购物</button>
+        <view>电商平台的收货地址请填写我们</view>
     </view>
-
-    <view style="display: flex; align-items: center; margin-left: 30%;">
-      <image style="width: 25px; height: 25px;" src="../../assets/images/右箭头.png"></image>
-    </view>
-
-  </view>
-
-  <view class="center">
-    <view class="car">
-      <view>
-        <view>
-          转运须知
-        </view>
-        <view>
-          流程和注意事项
-        </view>
-      </view>
-      <view class="bottom">
-        <view class="jiantou">
-          <image src="../../assets/images/jiantou.png"></image>
-        </view>
-        <view class="che">
-          <image src="../../assets/images/car.png"></image>
-        </view>
-      </view>
-    </view>
-
-    <view class="car ccc">
-      <view>
-        <view>
-          运费估算
-        </view>
-        <view>
-          费用心中有数
-        </view>
-      </view>
-      <view class="bottom">
-        <view class="jiantou1">
-          <image src="../../assets/images/jiantou.png"></image>
-        </view>
-        <view class="che2 ">
-          <image src="../../assets/images/jisuan.png"></image>
-        </view>
-      </view>
-    </view>
-  </view>
-  <view class="aaa">
-    <view class="text-content">
-      轻松转运
-
-    </view>
-    <image src="../../assets/images/图片 4@1x.png"></image>
-  </view>
-  <view class="btn">
-    <button>复制仓库地址去购物</button>
-    <view>电商平台的收货地址请填写我们</view>
-  </view>
 
 </view>

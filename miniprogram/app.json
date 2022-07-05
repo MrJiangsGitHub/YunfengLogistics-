@@ -2,6 +2,7 @@
   "pages": [
     "pages/home/home",
     "pages/coupon/coupon",
+    "pages/couponedit/couponedit",
     "pages/order/order",
     "pages/my/my",
     "pages/writeaddress/writeaddress",
